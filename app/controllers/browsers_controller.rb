@@ -3,30 +3,51 @@ require 'hpricot'
 
 class BrowsersController < ApplicationController
   
+  before_filter :prepare_browser, :only => [ :show ]
+  
   # Broken:
   #   Need to handle AJAX requests - fuck! :)
   #   Need to handle links to images..
+  # => Handled by not tracking anything with specific file extensions..
+  # => Should track links to these and return the appropriate content.. we can do this by switching off of the HTTP response headers. 
   #
   # Grace:
   #   Need to handle/guard-against logging in through forms   
+  #   Need to handle various HTTP responses
   
   def show
+    resp = resolve_request
+    content = resp.body
+    
+    p "got content:"
+    p content
+
+    # tbd - switch on content
+    
+    handle_html_file(content)
+  end
+  
+private
+
+  def prepare_browser
     p 'show called'
     p params
     
-    fields = params.dup
-    fields.delete "controller"
-    fields.delete "action"
-    puts "fields=#{fields.inspect}"
+    @fields = params.dup
+    @fields.delete "controller"
+    @fields.delete "action"
+    puts "@fields=#{@fields.inspect}"
     
-    current_url = browser_url( fields )
-    p "current_url=#{current_url}"
+    @current_url = browser_url( @fields )
+    p "@current_url=#{@current_url}"
     
-    target_url = fields.delete("t") || 'http://www.wikipedia.org'
-    target_url += '?' + fields.map { |k,v| "#{k}=#{v}" }.join( '&' ) unless fields.empty?
-    puts "target_url=#{target_url.inspect}"
-    
-    target_url_path = URI.escape(target_url)
+    @target_url = @fields.delete("t") || 'http://www.wikipedia.org'
+    @target_url += '?' + @fields.map { |k,v| "#{k}=#{v}" }.join( '&' ) unless @fields.empty?
+    puts "@target_url=#{@target_url.inspect}"
+  end
+  
+  def resolve_request
+    target_url_path = URI.escape(@target_url)
     target_uri = URI.parse( target_url_path )
     resp = Net::HTTP.start(target_uri.host, target_uri.port) do |http|
       p "looking up #{target_url_path}"
@@ -44,13 +65,12 @@ class BrowsersController < ApplicationController
       end
     end
     
-    base_href = target_uri.select( :scheme, :host ).join( '://' )
+    @base_href = target_uri.select( :scheme, :host ).join( '://' )
     
-    content = resp.body
-
-    p "got content:"
-    p content
-        
+    resp
+  end
+  
+  def handle_html_file(content)
     @document = Hpricot(content)
     
     # intercept links
@@ -59,10 +79,10 @@ class BrowsersController < ApplicationController
 
       if anchor_match = link_href.match( /^(#.*)/ )
         # keep in page anchors on page
-        link.set_attribute :href, "#{current_url}#{anchor_match[1]}"
-      else
+        link.set_attribute :href, "#{@current_url}#{anchor_match[1]}"
+      elsif ! link_to_file?( link_href )
         begin
-          link_href = "#{base_href}#{link_href}" if URI.parse(link_href.to_s).relative?
+          link_href = "#{@base_href}#{link_href}" if URI.parse(link_href.to_s).relative?
           link.set_attribute :href, browser_url( :t => URI.escape(link_href) )
         rescue URI::InvalidURIError
         end
@@ -81,30 +101,14 @@ class BrowsersController < ApplicationController
     # add base href
     @document.search( '//head' ) do |head|
       head_elements = head.search('/')
-      head_elements.first.before( "<base href='#{base_href}' />" )
+      head_elements.first.before( "<base href='#{@base_href}' />" )
     end    
   end
   
-  # def create
-  #   p params
-  #   
-  #   target_url = params.delete(:t)
-  #   
-  #   resp = Net::HTTP.post_form( URI.parse(target_url), params )
-  #   if resp.is_a? Net::HTTPFound
-  #     target_url = resp.instance_variable_get( :@header )['location']
-  #   end
-  # 
-  # 
-  #   
-  #   Processing BrowsersController#create (for 127.0.0.1 at 2009-07-06 00:47:07) [POST]
-  #     Parameters: {"search"=>"fda", "language"=>"en", "f"=>"http://www.wikipedia.org/search-redirect.php", "go"=>"Go"}
-  #   Rendering browsers/index
-  #   
-  #   
-  #   render :action => 'index'
-  # end
-  
-  def resolve_request
+  def link_to_file?(link)
+    extension_match = link.match( /\.(\w+)$/i )
+    return false unless extension_match
+
+    extension_match[1] !~ /s?html?|aspx?|php/i
   end
 end
