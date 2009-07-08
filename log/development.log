@@ -1,0 +1,2183 @@
+/!\ FAILSAFE /!\  Sun Jul 05 23:50:12 -0700 2009
+  Status: 500 Internal Server Error
+  could not open database: unable to open database file
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.1/lib/sqlite3/errors.rb:94:in `check'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.1/lib/sqlite3/database.rb:112:in `initialize'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `new'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `sqlite3_connection'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-07-05 23:54:01) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+Completed in 97ms (View: 19, DB: 1) | 200 OK [http://localhost/rails/info/properties]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-05 23:59:48) [GET]
+
+ActionController::RoutingError (No route matches "/wiki" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-06 00:00:04) [GET]
+
+ActionController::RoutingError (No route matches "/wiki" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-06 00:00:05) [GET]
+
+ActionController::RoutingError (No route matches "/wiki" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-06 00:00:05) [GET]
+
+ActionController::RoutingError (No route matches "/wiki" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-06 00:00:06) [GET]
+
+ActionController::RoutingError (No route matches "/wiki" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-06 00:00:33) [GET]
+
+ActionController::RoutingError (No route matches "/wiki/index" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-06 00:00:38) [GET]
+
+ActionController::RoutingError (No route matches "/wiki/show" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WikiController#show (for 127.0.0.1 at 2009-07-06 00:00:50) [GET]
+
+ActionView::MissingTemplate (Missing template wiki/show.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WikiController#index (for 127.0.0.1 at 2009-07-06 00:00:57) [GET]
+
+ActionView::MissingTemplate (Missing template wiki/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WikiController#index (for 127.0.0.1 at 2009-07-06 00:00:58) [GET]
+
+ActionView::MissingTemplate (Missing template wiki/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WikiController#index (for 127.0.0.1 at 2009-07-06 00:00:58) [GET]
+
+ActionView::MissingTemplate (Missing template wiki/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WikiController#index (for 127.0.0.1 at 2009-07-06 00:01:33) [GET]
+Rendering wiki/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/wiki]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-06 00:12:41) [GET]
+
+SyntaxError (/Users/dtognazzini/src/wikitracker/app/controllers/wiki_controller.rb:2: syntax error, unexpected tIDENTIFIER, expecting $end):
+  
+
+Rendered rescues/_trace (67.2ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WikiController#index (for 127.0.0.1 at 2009-07-06 00:13:00) [GET]
+
+NoMethodError (undefined method `host' for "http://www.wikipedia.com":String):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:379:in `get_response'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:356:in `get'
+  app/controllers/wiki_controller.rb:7:in `index'
+
+Rendered rescues/_trace (27.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WikiController#index (for 127.0.0.1 at 2009-07-06 00:13:33) [GET]
+Rendering wiki/index
+Completed in 242ms (View: 5, DB: 0) | 200 OK [http://localhost/wiki]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WikiController#index (for 127.0.0.1 at 2009-07-06 00:13:48) [GET]
+Rendering wiki/index
+Completed in 865ms (View: 10, DB: 0) | 200 OK [http://localhost/wiki]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WikiController#index (for 127.0.0.1 at 2009-07-06 00:15:31) [GET]
+Rendering wiki/index
+Completed in 940ms (View: 10, DB: 0) | 200 OK [http://localhost/wiki]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WikiController#index (for 127.0.0.1 at 2009-07-06 00:22:07) [GET]
+
+NoMethodError (undefined method `fetch_wiki_path' for #<WikiController:0x21784a8>):
+  app/controllers/wiki_controller.rb:15:in `index'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/wiki_controller.rb:14:in `index'
+
+Rendered rescues/_trace (26.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-06 00:25:11) [GET]
+
+ActionController::RoutingError (No route matches "/wiki" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-06 00:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/broswer" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-07-06 00:25:27) [GET]
+
+NoMethodError (undefined method `fetch_browser_path' for #<BrowserController:0x2223c2c>):
+  app/controllers/browser_controller.rb:15:in `index'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/browser_controller.rb:14:in `index'
+
+Rendered rescues/_trace (26.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+/!\ FAILSAFE /!\  Mon Jul 06 00:26:44 -0700 2009
+  Status: 500 Internal Server Error
+  wrong number of arguments (2 for 1)
+    /Users/dtognazzini/src/wikitracker/config/routes.rb:37:in `root'
+    /Users/dtognazzini/src/wikitracker/config/routes.rb:37
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:226:in `draw'
+    /Users/dtognazzini/src/wikitracker/config/routes.rb:1
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:266:in `load!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:281:in `reload'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:59:in `reload_application'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:8:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-06 00:26:47) [GET]
+
+ActionController::RoutingError (No route matches "/browser" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+/!\ FAILSAFE /!\  Mon Jul 06 00:27:00 -0700 2009
+  Status: 500 Internal Server Error
+  wrong number of arguments (2 for 1)
+    /Users/dtognazzini/src/wikitracker/config/routes.rb:37:in `root'
+    /Users/dtognazzini/src/wikitracker/config/routes.rb:37
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:226:in `draw'
+    /Users/dtognazzini/src/wikitracker/config/routes.rb:1
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/dtognazzini/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:266:in `load!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:281:in `reload'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:59:in `reload_application'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:8:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-06 00:27:01) [GET]
+
+ActionController::RoutingError (No route matches "/browser" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-06 00:27:02) [GET]
+
+ActionController::RoutingError (No route matches "/browser" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-06 00:27:02) [GET]
+
+ActionController::RoutingError (No route matches "/browser" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-07-06 00:27:29) [GET]
+
+NoMethodError (undefined method `fetch_browser_path' for #<BrowserController:0x23fd5c0>):
+  app/controllers/browser_controller.rb:15:in `index'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/browser_controller.rb:14:in `index'
+
+Rendered rescues/_trace (71.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-07-06 00:28:25) [GET]
+
+NoMethodError (undefined method `fetch_browser_path' for #<BrowserController:0x246925c>):
+  app/controllers/browser_controller.rb:15:in `index'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/browser_controller.rb:14:in `index'
+
+Rendered rescues/_trace (81.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-07-06 00:30:26) [GET]
+
+NameError (uninitialized constant BrowsersController):
+  
+
+Rendered rescues/_trace (22.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 00:31:26) [GET]
+
+ActionController::UnknownAction (No action responded to show. Actions: fetch and index):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 00:32:15) [GET]
+
+ActionController::UnknownAction (No action responded to show. Actions: index):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-06 00:32:23) [GET]
+
+ActionController::RoutingError (No route matches "/browsers" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-06 00:32:27) [GET]
+
+ActionController::RoutingError (No route matches "/browsers/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-06 00:32:28) [GET]
+
+ActionController::RoutingError (No route matches "/browsers/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#index (for 127.0.0.1 at 2009-07-06 00:32:39) [GET]
+
+NoMethodError (undefined method `index_browser_path' for #<BrowsersController:0x23d1060>):
+  app/controllers/browsers_controller.rb:15:in `index'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/browsers_controller.rb:14:in `index'
+
+Rendered rescues/_trace (72.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#index (for 127.0.0.1 at 2009-07-06 00:33:57) [GET]
+
+ActionView::MissingTemplate (Missing template browsers/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#index (for 127.0.0.1 at 2009-07-06 00:34:09) [GET]
+Rendering browsers/index
+Completed in 1016ms (View: 14, DB: 0) | 200 OK [http://localhost/browsers/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 00:34:19) [GET]
+  Parameters: {"t"=>"http://fr.wikipedia.org/"}
+
+ActionController::UnknownAction (No action responded to show. Actions: index):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 00:35:04) [GET]
+  Parameters: {"t"=>"http://fr.wikipedia.org/"}
+
+ActionController::UnknownAction (No action responded to show. Actions: index):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#index (for 127.0.0.1 at 2009-07-06 00:35:07) [GET]
+Rendering browsers/index
+Completed in 991ms (View: 10, DB: 0) | 200 OK [http://localhost/browsers/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#index (for 127.0.0.1 at 2009-07-06 00:38:27) [GET]
+Rendering browsers/index
+Completed in 1849ms (View: 10, DB: 0) | 200 OK [http://localhost/browsers/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 00:38:42) [GET]
+  Parameters: {"search"=>"", "language"=>"en", "go"=>"Go"}
+
+ActionController::UnknownAction (No action responded to show. Actions: index):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#create (for 127.0.0.1 at 2009-07-06 00:40:14) [POST]
+  Parameters: {"search"=>"", "language"=>"en", "f"=>"http://www.wikipedia.org/search-redirect.php", "go"=>"Go"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+
+Rendered rescues/_trace (26.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#index (for 127.0.0.1 at 2009-07-06 00:41:24) [GET]
+Rendering browsers/index
+Completed in 1734ms (View: 23, DB: 0) | 200 OK [http://localhost/browsers/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#index (for 127.0.0.1 at 2009-07-06 00:41:32) [GET]
+Rendering browsers/index
+Completed in 892ms (View: 10, DB: 0) | 200 OK [http://localhost/browsers/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#create (for 127.0.0.1 at 2009-07-06 00:41:39) [POST]
+  Parameters: {"search"=>"fda", "language"=>"en", "f"=>"http://www.wikipedia.org/search-redirect.php", "go"=>"Go"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#create (for 127.0.0.1 at 2009-07-06 00:45:53) [POST]
+  Parameters: {"search"=>"fda", "language"=>"en", "f"=>"http://www.wikipedia.org/search-redirect.php", "go"=>"Go"}
+
+ActionController::UnknownAction (No action responded to create. Actions: index):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#create (for 127.0.0.1 at 2009-07-06 00:46:19) [POST]
+  Parameters: {"search"=>"fda", "language"=>"en", "f"=>"http://www.wikipedia.org/search-redirect.php", "go"=>"Go"}
+
+ActionView::MissingTemplate (Missing template browsers/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#create (for 127.0.0.1 at 2009-07-06 00:47:07) [POST]
+  Parameters: {"search"=>"fda", "language"=>"en", "f"=>"http://www.wikipedia.org/search-redirect.php", "go"=>"Go"}
+Rendering browsers/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_html) on line #1 of app/views/browsers/index.html.erb:
+1: <%= @document.to_html %>
+
+    app/views/browsers/index.html.erb:1
+    app/controllers/browsers_controller.rb:29:in `create'
+
+Rendered rescues/_trace (88.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:08:52) [GET]
+
+ActionController::UnknownAction (No action responded to show. Actions: index and resolve_request):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:09:00) [GET]
+
+ActionController::UnknownAction (No action responded to show. Actions: index and resolve_request):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:09:01) [GET]
+
+ActionController::UnknownAction (No action responded to show. Actions: index and resolve_request):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#index (for 127.0.0.1 at 2009-07-06 01:09:12) [GET]
+Rendering browsers/index
+Completed in 882ms (View: 10, DB: 0) | 200 OK [http://localhost/browsers/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:09:21) [GET]
+  Parameters: {"search"=>"July 4th", "language"=>"en", "go"=>"Go"}
+
+ActionController::UnknownAction (No action responded to show. Actions: index and resolve_request):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#index (for 127.0.0.1 at 2009-07-06 01:10:39) [GET]
+
+NoMethodError (undefined method `browsers_path' for #<BrowsersController:0x24d135c>):
+  app/controllers/browsers_controller.rb:21:in `index'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/browsers_controller.rb:20:in `index'
+
+Rendered rescues/_trace (26.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#index (for 127.0.0.1 at 2009-07-06 01:10:46) [GET]
+Rendering browsers/index
+Completed in 1163ms (View: 11, DB: 0) | 200 OK [http://localhost/browsers/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#index (for 127.0.0.1 at 2009-07-06 01:10:53) [GET]
+Rendering browsers/index
+Completed in 1069ms (View: 10, DB: 1) | 200 OK [http://localhost/browsers/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:11:07) [GET]
+
+ActionController::UnknownAction (No action responded to show. Actions: index and resolve_request):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:13:07) [GET]
+
+ActionView::MissingTemplate (Missing template browsers/show.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:13:23) [GET]
+Rendering browsers/show
+Completed in 36771ms (View: 14, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:14:00) [GET]
+Rendering browsers/show
+Completed in 2097ms (View: 12, DB: 0) | 200 OK [http://localhost/browser/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:14:25) [GET]
+  Parameters: {"search"=>"ampersand", "language"=>"en", "go"=>"Go"}
+Rendering browsers/show
+Completed in 965ms (View: 10, DB: 1) | 200 OK [http://localhost/browser?search=ampersand&language=en&go=++%E2%86%92++&go=Go]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:19:08) [GET]
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/browsers_controller.rb:19:in `url_for'
+  app/controllers/browsers_controller.rb:19:in `show'
+
+Rendered rescues/_trace (26.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:28:54) [GET]
+
+SocketError (getaddrinfo: nodename nor servname provided, or not known):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:564:in `initialize'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:564:in `open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:564:in `connect'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:76:in `timeout'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:564:in `connect'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:557:in `do_start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:546:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:379:in `get_response'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:356:in `get'
+  app/controllers/browsers_controller.rb:21:in `show'
+
+Rendered rescues/_trace (30.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:30:16) [GET]
+Rendering browsers/show
+Completed in 1130ms (View: 11, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:30:47) [GET]
+Rendering browsers/show
+Completed in 914ms (View: 10, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:30:59) [GET]
+  Parameters: {"search"=>"", "language"=>"en", "go"=>"Go"}
+Rendering browsers/show
+Completed in 1007ms (View: 10, DB: 0) | 200 OK [http://localhost/browser?search=&language=en&go=++%E2%86%92++&go=Go]
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:31:26) [GET]
+  Parameters: {"search"=>"ampersand", "language"=>"en", "go"=>"Go"}
+Rendering browsers/show
+Completed in 1043ms (View: 11, DB: 1) | 200 OK [http://localhost/browser?search=ampersand&language=en&go=++%E2%86%92++&go=Go]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:31:57) [GET]
+  Parameters: {"t"=>"http://nl.wikipedia.org/"}
+Rendering browsers/show
+Completed in 230ms (View: 1, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fnl.wikipedia.org%2F]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-07-06 01:43:28) [GET]
+
+SyntaxError (/Users/dtognazzini/src/wikitracker/app/controllers/browsers_controller.rb:28: syntax error, unexpected tCONSTANT, expecting kDO_COND or ':' or '\n' or ';'
+    while resp.is_a? Net::HTTPFound || resp.is_a? Net::HTTPMovedPermanently do
+                                                     ^
+/Users/dtognazzini/src/wikitracker/app/controllers/browsers_controller.rb:28: syntax error, unexpected kDO_COND
+/Users/dtognazzini/src/wikitracker/app/controllers/browsers_controller.rb:30: syntax error, unexpected kDO_COND, expecting kEND
+      resp = Net::HTTP.start(target_url.host, target_url.port) do |http|
+                                                                 ^
+/Users/dtognazzini/src/wikitracker/app/controllers/browsers_controller.rb:42: syntax error, unexpected kDO_COND, expecting $end
+    @document.search('//a[@href]') do |link|
+                                     ^):
+  
+
+Rendered rescues/_trace (84.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:43:44) [GET]
+
+ArgumentError (HTTP request path is empty):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1479:in `initialize'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1597:in `initialize'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:781:in `new'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:781:in `get'
+  app/controllers/browsers_controller.rb:25:in `show'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:547:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:440:in `start'
+  app/controllers/browsers_controller.rb:24:in `show'
+
+Rendered rescues/_trace (29.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:45:15) [GET]
+Rendering browsers/show
+Completed in 1001ms (View: 10, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:45:24) [GET]
+  Parameters: {"search"=>"at symbol", "language"=>"en", "go"=>"Go"}
+Rendering browsers/show
+Completed in 1526ms (View: 10, DB: 0) | 200 OK [http://localhost/browser?search=at+symbol&language=en&go=++%E2%86%92++&go=Go]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:46:34) [GET]
+  Parameters: {"search"=>"ds", "language"=>"en", "go"=>"Go"}
+Rendering browsers/show
+Completed in 2003ms (View: 10, DB: 0) | 200 OK [http://localhost/browser?search=ds&language=en&go=++%E2%86%92++&go=Go]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:49:31) [GET]
+  Parameters: {"search"=>"fds", "language"=>"en", "go"=>"Go"}
+Rendering browsers/show
+Completed in 1826ms (View: 10, DB: 0) | 200 OK [http://localhost/browser?search=fds&language=en&go=++%E2%86%92++&go=Go]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:50:10) [GET]
+  Parameters: {"t"=>"http://nl.wikipedia.org/"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://nl.wikipedia.org/wiki/Hoofdpagina):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/browsers_controller.rb:32:in `show'
+
+Rendered rescues/_trace (87.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:50:13) [GET]
+Rendering browsers/show
+Completed in 914ms (View: 10, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:50:15) [GET]
+Rendering browsers/show
+Completed in 939ms (View: 11, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:50:54) [GET]
+  Parameters: {"search"=>"at symbol", "language"=>"en", "go"=>"Go"}
+Rendering browsers/show
+Completed in 2324ms (View: 10, DB: 0) | 200 OK [http://localhost/browser?search=at+symbol&language=en&go=++%E2%86%92++&go=Go]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:51:14) [GET]
+Rendering browsers/show
+Completed in 1223ms (View: 11, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:51:17) [GET]
+Rendering browsers/show
+Completed in 991ms (View: 10, DB: 2) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:51:23) [GET]
+  Parameters: {"search"=>"Trotsky", "language"=>"en", "go"=>"Go"}
+Rendering browsers/show
+Completed in 2115ms (View: 10, DB: 0) | 200 OK [http://localhost/browser?search=Trotsky&language=en&go=++%E2%86%92++&go=Go]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:53:46) [GET]
+Rendering browsers/show
+Completed in 1003ms (View: 10, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:53:49) [GET]
+Rendering browsers/show
+Completed in 973ms (View: 10, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:55:04) [GET]
+Rendering browsers/show
+Completed in 1045ms (View: 9, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-06 01:55:21) [GET]
+  Parameters: {"search"=>"Trotsky", "language"=>"en", "go"=>"Go"}
+Rendering browsers/show
+Completed in 966ms (View: 10, DB: 0) | 200 OK [http://localhost/browser?search=Trotsky&language=en&go=++%E2%86%92++&go=Go]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 00:20:07) [GET]
+Rendering browsers/show
+Completed in 1064ms (View: 15, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 00:20:26) [GET]
+  Parameters: {"search"=>"ampersand", "language"=>"en", "go"=>"Go", "t"=>"http://www.wikipedia.org/search-redirect.php"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://en.wikipedia.org/wiki/Special:Search?search=ampersand&go=Go):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/browsers_controller.rb:34:in `show'
+
+Rendered rescues/_trace (28.3ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 00:24:02) [GET]
+  Parameters: {"search"=>"ampersand", "language"=>"en", "go"=>"Go", "t"=>"http://www.wikipedia.org/search-redirect.php"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://en.wikipedia.org/wiki/Special:Search?search=ampersand&go=Go):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/browsers_controller.rb:34:in `show'
+
+Rendered rescues/_trace (30.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 00:31:33) [GET]
+  Parameters: {"search"=>"ampersand", "language"=>"en", "go"=>"Go", "t"=>"http://www.wikipedia.org/search-redirect.php"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://en.wikipedia.org/wiki/Special:Search?search=ampersand&go=Go):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  app/controllers/browsers_controller.rb:39:in `show'
+
+Rendered rescues/_trace (92.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 00:37:18) [GET]
+  Parameters: {"search"=>"ampersand", "language"=>"en", "go"=>"Go", "t"=>"http://www.wikipedia.org/search-redirect.php"}
+
+NoMethodError (private method `gsub' called for #<Array:0x24b3974>):
+  app/controllers/browsers_controller.rb:35:in `show'
+
+Rendered rescues/_trace (31.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 00:38:25) [GET]
+  Parameters: {"search"=>"ampersand", "language"=>"en", "go"=>"Go", "t"=>"http://www.wikipedia.org/search-redirect.php"}
+
+NoMethodError (private method `gsub' called for #<Array:0x23a7044>):
+  app/controllers/browsers_controller.rb:35:in `show'
+
+Rendered rescues/_trace (25.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 00:38:45) [GET]
+  Parameters: {"search"=>"ampersand", "language"=>"en", "go"=>"Go", "t"=>"http://www.wikipedia.org/search-redirect.php"}
+
+NoMethodError (private method `gsub' called for #<Array:0x2554d10>):
+  app/controllers/browsers_controller.rb:37:in `show'
+
+Rendered rescues/_trace (29.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 00:39:04) [GET]
+  Parameters: {"search"=>"ampersand", "language"=>"en", "go"=>"Go", "t"=>"http://www.wikipedia.org/search-redirect.php"}
+Rendering browsers/show
+Completed in 1728ms (View: 16, DB: 2) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fwww.wikipedia.org%2Fsearch-redirect.php&search=ampersand&language=en&go=++%E2%86%92++&go=Go]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:39:06) [GET]
+  Parameters: {"227x"=>nil}
+
+ActionController::RoutingError (No route matches "/skins-1.5/common/shared.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:39:06) [GET]
+  Parameters: {"227x"=>nil}
+
+ActionController::RoutingError (No route matches "/skins-1.5/common/commonPrint.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:39:06) [GET]
+  Parameters: {"227x"=>nil}
+
+ActionController::RoutingError (No route matches "/skins-1.5/monobook/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:39:06) [GET]
+  Parameters: {"227x"=>nil}
+
+ActionController::RoutingError (No route matches "/skins-1.5/chick/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#raw (for 127.0.0.1 at 2009-07-07 00:39:06) [GET]
+  Parameters: {"ctype"=>"text/css", "title"=>"MediaWiki:Common.css", "smaxage"=>"2678400", "maxage"=>"2678400", "usemsgcache"=>"yes"}
+
+ActionController::RoutingError (No route matches "/w/index.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#raw (for 127.0.0.1 at 2009-07-07 00:39:06) [GET]
+  Parameters: {"ctype"=>"text/css", "title"=>"MediaWiki:Print.css", "smaxage"=>"2678400", "maxage"=>"2678400", "usemsgcache"=>"yes"}
+
+ActionController::RoutingError (No route matches "/w/index.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#raw (for 127.0.0.1 at 2009-07-07 00:39:06) [GET]
+  Parameters: {"ctype"=>"text/css", "title"=>"MediaWiki:Handheld.css", "smaxage"=>"2678400", "maxage"=>"2678400", "usemsgcache"=>"yes"}
+
+ActionController::RoutingError (No route matches "/w/index.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#raw (for 127.0.0.1 at 2009-07-07 00:39:06) [GET]
+  Parameters: {"ctype"=>"text/css", "title"=>"MediaWiki:Monobook.css", "smaxage"=>"2678400", "maxage"=>"2678400", "usemsgcache"=>"yes"}
+
+ActionController::RoutingError (No route matches "/w/index.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#raw (for 127.0.0.1 at 2009-07-07 00:39:06) [GET]
+  Parameters: {"title"=>"-", "maxage"=>"2678400", "gen"=>"css"}
+
+ActionController::RoutingError (No route matches "/w/index.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:39:06) [GET]
+  Parameters: {"227x"=>nil}
+
+ActionController::RoutingError (No route matches "/skins-1.5/common/wikibits.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:39:06) [GET]
+  Parameters: {"227x"=>nil}
+
+ActionController::RoutingError (No route matches "/skins-1.5/common/ajax.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:39:06) [GET]
+  Parameters: {"1"=>nil}
+
+ActionController::RoutingError (No route matches "/w/extensions/UsabilityInitiative/Resources/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:39:07) [GET]
+  Parameters: {"1"=>nil}
+
+ActionController::RoutingError (No route matches "/w/extensions/UsabilityInitiative/Resources/messages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:39:07) [GET]
+  Parameters: {"1"=>nil}
+
+ActionController::RoutingError (No route matches "/w/extensions/UsabilityInitiative/Resources/jquery.textSelection.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:39:07) [GET]
+  Parameters: {"1"=>nil}
+
+ActionController::RoutingError (No route matches "/w/extensions/UsabilityInitiative/Resources/jquery.cookie.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:39:07) [GET]
+  Parameters: {"1"=>nil}
+
+ActionController::RoutingError (No route matches "/w/extensions/UsabilityInitiative/Resources/jquery.async.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:39:07) [GET]
+  Parameters: {"1"=>nil}
+
+ActionController::RoutingError (No route matches "/w/extensions/UsabilityInitiative/Resources/jquery.browser.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:39:07) [GET]
+  Parameters: {"227x"=>nil}
+
+ActionController::RoutingError (No route matches "/skins-1.5/common/mwsuggest.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#raw (for 127.0.0.1 at 2009-07-07 00:39:07) [GET]
+  Parameters: {"title"=>"-", "gen"=>"js", "useskin"=>"monobook"}
+
+ActionController::RoutingError (No route matches "/w/index.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:39:07) [GET]
+
+ActionController::RoutingError (No route matches "/skins-1.5/common/images/magnify-clip.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:39:07) [GET]
+
+ActionController::RoutingError (No route matches "/skins-1.5/common/images/poweredby_mediawiki_88x31.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:39:07) [GET]
+
+ActionController::RoutingError (No route matches "/images/wikimedia-button.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 00:40:03) [GET]
+Rendering browsers/show
+Completed in 3671ms (View: 10, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 00:40:10) [GET]
+  Parameters: {"search"=>"ampersand", "language"=>"en", "go"=>"Go", "t"=>"http://www.wikipedia.org/search-redirect.php"}
+Rendering browsers/show
+Completed in 1669ms (View: 16, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fwww.wikipedia.org%2Fsearch-redirect.php&search=ampersand&language=en&go=++%E2%86%92++&go=Go]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"227x"=>nil}
+
+ActionController::RoutingError (No route matches "/skins-1.5/common/shared.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"227x"=>nil}
+
+ActionController::RoutingError (No route matches "/skins-1.5/common/commonPrint.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"227x"=>nil}
+
+ActionController::RoutingError (No route matches "/skins-1.5/monobook/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"227x"=>nil}
+
+ActionController::RoutingError (No route matches "/skins-1.5/chick/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#raw (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"ctype"=>"text/css", "title"=>"MediaWiki:Common.css", "smaxage"=>"2678400", "maxage"=>"2678400", "usemsgcache"=>"yes"}
+
+ActionController::RoutingError (No route matches "/w/index.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#raw (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"ctype"=>"text/css", "title"=>"MediaWiki:Print.css", "smaxage"=>"2678400", "maxage"=>"2678400", "usemsgcache"=>"yes"}
+
+ActionController::RoutingError (No route matches "/w/index.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#raw (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"ctype"=>"text/css", "title"=>"MediaWiki:Handheld.css", "smaxage"=>"2678400", "maxage"=>"2678400", "usemsgcache"=>"yes"}
+
+ActionController::RoutingError (No route matches "/w/index.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#raw (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"ctype"=>"text/css", "title"=>"MediaWiki:Monobook.css", "smaxage"=>"2678400", "maxage"=>"2678400", "usemsgcache"=>"yes"}
+
+ActionController::RoutingError (No route matches "/w/index.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#raw (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"title"=>"-", "maxage"=>"2678400", "gen"=>"css"}
+
+ActionController::RoutingError (No route matches "/w/index.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"227x"=>nil}
+
+ActionController::RoutingError (No route matches "/skins-1.5/common/wikibits.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"227x"=>nil}
+
+ActionController::RoutingError (No route matches "/skins-1.5/common/ajax.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"1"=>nil}
+
+ActionController::RoutingError (No route matches "/w/extensions/UsabilityInitiative/Resources/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"1"=>nil}
+
+ActionController::RoutingError (No route matches "/w/extensions/UsabilityInitiative/Resources/messages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"1"=>nil}
+
+ActionController::RoutingError (No route matches "/w/extensions/UsabilityInitiative/Resources/jquery.textSelection.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"1"=>nil}
+
+ActionController::RoutingError (No route matches "/w/extensions/UsabilityInitiative/Resources/jquery.cookie.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"1"=>nil}
+
+ActionController::RoutingError (No route matches "/w/extensions/UsabilityInitiative/Resources/jquery.async.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"1"=>nil}
+
+ActionController::RoutingError (No route matches "/w/extensions/UsabilityInitiative/Resources/jquery.browser.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"227x"=>nil}
+
+ActionController::RoutingError (No route matches "/skins-1.5/common/mwsuggest.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#raw (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+  Parameters: {"title"=>"-", "gen"=>"js", "useskin"=>"monobook"}
+
+ActionController::RoutingError (No route matches "/w/index.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+
+ActionController::RoutingError (No route matches "/skins-1.5/common/images/magnify-clip.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+
+ActionController::RoutingError (No route matches "/skins-1.5/common/images/poweredby_mediawiki_88x31.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-07 00:40:12) [GET]
+
+ActionController::RoutingError (No route matches "/images/wikimedia-button.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 00:40:34) [GET]
+  Parameters: {"search"=>"ampersand", "language"=>"en", "go"=>"Go", "t"=>"http://www.wikipedia.org/search-redirect.php"}
+Rendering browsers/show
+Completed in 1684ms (View: 17, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fwww.wikipedia.org%2Fsearch-redirect.php&search=ampersand&language=en&go=++%E2%86%92++&go=Go]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 00:56:54) [GET]
+  Parameters: {"search"=>"ampersand", "language"=>"en", "go"=>"Go", "t"=>"http://www.wikipedia.org/search-redirect.php"}
+Rendering browsers/show
+Completed in 1817ms (View: 17, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fwww.wikipedia.org%2Fsearch-redirect.php&search=ampersand&language=en&go=++%E2%86%92++&go=Go]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 00:59:06) [GET]
+  Parameters: {"search"=>"ampersand", "language"=>"en", "go"=>"Go", "t"=>"http://www.wikipedia.org/search-redirect.php"}
+Rendering browsers/show
+Completed in 1762ms (View: 16, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fwww.wikipedia.org%2Fsearch-redirect.php&search=ampersand&language=en&go=++%E2%86%92++&go=Go]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:05:28) [GET]
+  Parameters: {"search"=>"ampersand", "language"=>"en", "go"=>"Go", "t"=>"http://www.wikipedia.org/search-redirect.php"}
+Rendering browsers/show
+Completed in 1816ms (View: 17, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fwww.wikipedia.org%2Fsearch-redirect.php&search=ampersand&language=en&go=++%E2%86%92++&go=Go]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:05:47) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Typographic_ligature"}
+Rendering browsers/show
+Completed in 1540ms (View: 75, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTypographic_ligature]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:07:28) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Sumerian_cuneiform"}
+Rendering browsers/show
+Completed in 1917ms (View: 88, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSumerian_cuneiform]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:08:11) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org%23Transliteration"}
+
+URI::InvalidURIError (the scheme http does not accept registry part: en.wikipedia.org%2523Transliteration (or bad hostname?)):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/generic.rb:195:in `initialize'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/http.rb:78:in `initialize'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:488:in `new'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:488:in `parse'
+  app/controllers/browsers_controller.rb:25:in `show'
+
+Rendered rescues/_trace (27.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:10:56) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Sumerian_cuneiform"}
+Rendering browsers/show
+Completed in 1705ms (View: 85, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSumerian_cuneiform]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:14:32) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Sumerian_cuneiform"}
+Rendering browsers/show
+Completed in 1795ms (View: 91, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSumerian_cuneiform]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:14:42) [GET]
+
+URI::InvalidURIError (bad URI(is not URI?): http://ab.wikipedia.org/wiki/Ихадоу_адаҟьа):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/browsers_controller.rb:57:in `show'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/browsers_controller.rb:51:in `show'
+
+Rendered rescues/_trace (28.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:20:09) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Sumerian_cuneiform"}
+Rendering browsers/show
+Completed in 1793ms (View: 101, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSumerian_cuneiform]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:23:21) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Bronze_Age"}
+Rendering browsers/show
+Completed in 1499ms (View: 20, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBronze_Age]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:24:48) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Aegean_civilization"}
+Rendering browsers/show
+Completed in 1588ms (View: 19, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAegean_civilization]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:30:03) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Encyclop%25C3%25A6dia_Britannica_Eleventh_Edition"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://en.wikipedia.org/wiki/|):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/browsers_controller.rb:60:in `show'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/browsers_controller.rb:53:in `show'
+
+Rendered rescues/_trace (91.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:30:44) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Prehistoric_Balkans"}
+Rendering browsers/show
+Completed in 1449ms (View: 18, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPrehistoric_Balkans]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:30:53) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Mesolithic"}
+Rendering browsers/show
+Completed in 1084ms (View: 10, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMesolithic]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:31:00) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Wikipedia:About"}
+Rendering browsers/show
+Completed in 1468ms (View: 18, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWikipedia%3AAbout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:31:19) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Neolithic"}
+Rendering browsers/show
+Completed in 1642ms (View: 23, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNeolithic]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:31:42) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/File:N%25C3%25A9olithique_0008.jpg"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://en.wikipedia.org/wiki/|):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/browsers_controller.rb:60:in `show'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/browsers_controller.rb:53:in `show'
+
+Rendered rescues/_trace (86.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:31:49) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/File:N%25C3%25A9olithique_0008.jpg"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://en.wikipedia.org/wiki/|):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/browsers_controller.rb:60:in `show'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/browsers_controller.rb:53:in `show'
+
+Rendered rescues/_trace (28.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:32:33) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Special:BookSources/9783638945592"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://sirsiweb.ocln.org/uhtbin/cgisirsi/x/0/0/5?searchdata1=9783638945592&srchfield1=GENERAL^SUBJECT^GENERAL^^words+or+phrase&sort_by=-PBYR&library=ALL&user_id=webserver&password=OCLN):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/browsers_controller.rb:62:in `show'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/browsers_controller.rb:55:in `show'
+
+Rendered rescues/_trace (27.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:33:22) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Special:BookSources/9783638945592"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://sirsiweb.ocln.org/uhtbin/cgisirsi/x/0/0/5?searchdata1=9783638945592&srchfield1=GENERAL^SUBJECT^GENERAL^^words+or+phrase&sort_by=-PBYR&library=ALL&user_id=webserver&password=OCLN):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/browsers_controller.rb:62:in `show'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/browsers_controller.rb:55:in `show'
+
+Rendered rescues/_trace (26.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:33:32) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Category:Greek_loanwords"}
+Rendering browsers/show
+Completed in 953ms (View: 8, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCategory%3AGreek_loanwords]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:33:40) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Aesthetics"}
+Rendering browsers/show
+Completed in 2190ms (View: 91, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAesthetics]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:34:07) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Chamomile"}
+Rendering browsers/show
+Completed in 791ms (View: 7, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FChamomile]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:34:12) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Wikipedia:Citation_needed"}
+Rendering browsers/show
+Completed in 729ms (View: 4, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWikipedia%3ACitation_needed]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:34:26) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Chamomile"}
+Rendering browsers/show
+Completed in 599ms (View: 3, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Ftitle%3DSpecial%3AUserLogin%26returnto%3DChamomile]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#create (for 127.0.0.1 at 2009-07-07 01:34:36) [POST]
+  Parameters: {"wpLoginattempt"=>"Log in", "wpName"=>"fda", "t"=>"/w/index.php?title=Special:UserLogin&action=submitlogin&type=login&returnto=Chamomile", "wpPassword"=>"sf"}
+
+ActionController::UnknownAction (No action responded to create. Actions: resolve_request and show):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:35:24) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Wikipedia:Upload"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://en.wikipedia.org/w/index.php?title=Special:Upload&uselang=en-ownwork&wpUploadDescription={{Information%0A+|Description++++=+%0A+|Source+++++++++=+I%20created%20this%20work%20entirely%20by%20myself.%0A+|Date+++++++++++=+%0A+|Author+++++++++=+%7E%7E%7E%0A+|other_versions+=+%0A}}):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/browsers_controller.rb:64:in `show'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/browsers_controller.rb:57:in `show'
+
+Rendered rescues/_trace (84.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:35:29) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Chamomile"}
+Rendering browsers/show
+Completed in 800ms (View: 5, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Ftitle%3DSpecial%3AUserLogin%26returnto%3DChamomile]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:40:24) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Main_Page"}
+Rendering browsers/show
+Completed in 1167ms (View: 65, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMain_Page]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:40:25) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Main_Page"}
+Rendering browsers/show
+Completed in 1118ms (View: 12, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMain_Page]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:40:32) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Thriller_(album)"}
+Rendering browsers/show
+Completed in 2440ms (View: 106, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FThriller_%28album%29]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:40:43) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Michael_Jackson"}
+Rendering browsers/show
+Completed in 4701ms (View: 87, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMichael_Jackson]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:41:32) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Rhinoplasty"}
+Rendering browsers/show
+Completed in 1193ms (View: 13, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRhinoplasty]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:44:05) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Analgesia"}
+Rendering browsers/show
+Completed in 1474ms (View: 17, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAnalgesia]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:44:14) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Michael_Jackson"}
+Rendering browsers/show
+Completed in 4219ms (View: 157, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMichael_Jackson]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:45:45) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Vitiligo"}
+Rendering browsers/show
+Completed in 1839ms (View: 27, DB: 1) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FVitiligo]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:47:04) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Moonwalk_(dance)"}
+Rendering browsers/show
+Completed in 1864ms (View: 10, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMoonwalk_%28dance%29]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:48:31) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/File:MichaelJacksonMoonwalk.ogg"}
+Rendering browsers/show
+Completed in 839ms (View: 6, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFile%3AMichaelJacksonMoonwalk.ogg]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:48:49) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Michael_Jackson"}
+Rendering browsers/show
+Completed in 4191ms (View: 165, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMichael_Jackson]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:49:16) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Lupus"}
+Rendering browsers/show
+Completed in 798ms (View: 6, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLupus]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:49:28) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Systemic_lupus_erythematosus"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://www.informaworld.com/openurl?genre=article&doi=10.1080/03009740802552469&magic=pubmed||1B69BA326FFE69C3F0A8F227DF8201D0):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/browsers_controller.rb:64:in `show'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/browsers_controller.rb:57:in `show'
+
+Rendered rescues/_trace (88.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:49:46) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Lupus_erythematosus"}
+Rendering browsers/show
+Completed in 986ms (View: 11, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLupus_erythematosus]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:50:16) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Lupus"}
+Rendering browsers/show
+Completed in 766ms (View: 5, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLupus]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:50:17) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Lupus"}
+Rendering browsers/show
+Completed in 744ms (View: 5, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLupus]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:50:35) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Cleft_chin"}
+Rendering browsers/show
+Completed in 638ms (View: 4, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCleft_chin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:51:26) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Michael_Jackson"}
+Rendering browsers/show
+Completed in 4157ms (View: 150, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMichael_Jackson]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 01:52:48) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/People_v._Jackson"}
+Rendering browsers/show
+Completed in 1850ms (View: 99, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPeople_v._Jackson]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 02:17:23) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/1993_child_sexual_abuse_accusations_against_Michael_Jackson"}
+Rendering browsers/show
+Completed in 16803ms (View: 31, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2F1993_child_sexual_abuse_accusations_against_Michael_Jackson]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 09:11:54) [GET]
+
+URI::InvalidURIError (bad URI(is not URI?): http://ab.wikipedia.org/wiki/Ихадоу_адаҟьа):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/browsers_controller.rb:64:in `show'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/browsers_controller.rb:57:in `show'
+
+Rendered rescues/_trace (28.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 09:12:07) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Sumerian_cuneiform"}
+Rendering browsers/show
+Completed in 1727ms (View: 34, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSumerian_cuneiform]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 09:12:18) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Determinative"}
+Rendering browsers/show
+Completed in 693ms (View: 61, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDeterminative]
+  [4;36;1mSQL (35.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 12:10:32) [GET]
+
+URI::InvalidURIError (bad URI(is not URI?): http://ab.wikipedia.org/wiki/Ихадоу_адаҟьа):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/browsers_controller.rb:64:in `show'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/browsers_controller.rb:57:in `show'
+
+Rendered rescues/_trace (27.4ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 17:00:01) [GET]
+
+URI::InvalidURIError (bad URI(is not URI?): http://ab.wikipedia.org/wiki/Ихадоу_адаҟьа):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/browsers_controller.rb:64:in `show'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `each'
+  hpricot (0.6) lib/hpricot/traverse.rb:314:in `search'
+  app/controllers/browsers_controller.rb:57:in `show'
+
+Rendered rescues/_trace (81.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 17:01:44) [GET]
+Rendering browsers/show
+Completed in 1146ms (View: 51, DB: 0) | 200 OK [http://localhost/browser]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 17:03:15) [GET]
+  Parameters: {"search"=>"nuts", "language"=>"en", "go"=>"Go", "t"=>"http://www.wikipedia.org/search-redirect.php"}
+Rendering browsers/show
+Completed in 1038ms (View: 5, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fwww.wikipedia.org%2Fsearch-redirect.php&search=nuts&language=en&go=++%E2%86%92++&go=Go]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BrowsersController#show (for 127.0.0.1 at 2009-07-07 17:03:27) [GET]
+  Parameters: {"t"=>"http://en.wikipedia.org/wiki/Nut_(goddess)"}
+Rendering browsers/show
+Completed in 1186ms (View: 10, DB: 0) | 200 OK [http://localhost/browser?t=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNut_%28goddess%29]
