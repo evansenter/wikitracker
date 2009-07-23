@@ -3,8 +3,6 @@ class NodeConnection
   DESTINATION_VERTEX_URL_KEY = 't'.freeze
   LINK_NAME_KEY  = 'n'.freeze
   
-  DEFAULT_URL = 'http://www.wikipedia.org'.freeze
-  
   attr_accessor :origin_vertex
   attr_accessor :link_name
   attr_accessor :destination_vertex_url
@@ -25,24 +23,15 @@ class NodeConnection
   class << self
     
     def new_from_params(params)
-      origin_vertex = find_origin_vertex_by_url( params.delete( ORIGIN_VERTEX_URL_KEY ) )
+      origin_vertex = Graph.find_vertex( params.delete( ORIGIN_VERTEX_URL_KEY ) )
 
-      destination_vertex_url = params.delete( DESTINATION_VERTEX_URL_KEY ) || DEFAULT_URL
-      link_name = params.delete( LINK_NAME_KEY ) || DEFAULT_URL
+      destination_vertex_url = params.delete( DESTINATION_VERTEX_URL_KEY ) || Vertex::NULL_URL
+      link_name = params.delete( LINK_NAME_KEY ) || Vertex::NULL_URL
 
       destination_vertex_url += '?' + params.map { |k,v| "#{k}=#{v}" }.join( '&' ) unless params.empty?
 
       NodeConnection.new(origin_vertex, destination_vertex_url, link_name)
     end
-    
-  private
-  
-    def find_origin_vertex_by_url(vertex_url)
-      if vertex_url
-        Vertex.find_by_url( vertex_url )   
-      else
-        Vertex.create!( :url => DEFAULT_URL, :title => 'Wikipedia')
-      end
-    end
+      
   end
 end

@@ -25,18 +25,19 @@ class BrowsersController < ApplicationController
     puts "@fields=#{@fields.inspect}"
     
     @browser = Browser.new(browser_url( @fields ), @fields)
+    puts "-- On creation -- "
     p @browser
 
-    @browser.load_page
-    
     url_generator = method(:browser_url).to_proc
-    @page = @browser.get_page(&url_generator)
+
+    @browser.handle_request(&url_generator)
+    puts "-- After page load -- "
+    p @browser
     
     Graph.record_node(
-      @browser.next_page.origin_vertex, 
-      @browser.next_page.link_name, 
-      @page.title, 
-      @browser.next_page.destination_vertex_url)
+      @browser.request.origin_vertex, 
+      @browser.request.link_name, 
+      @browser.next_vertex)
   end
 
 end

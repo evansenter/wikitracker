@@ -23,7 +23,9 @@ class Edge < ActiveRecord::Base
                                       (attributes[:from_vertex].nil? ? 'NULL' : attributes[:from_vertex].id), 
                                       (attributes[:to_vertex].nil? ? 'NULL' : attributes[:to_vertex].id) ] )
     if edge.nil?
-      Edge.create!(attributes)
+      edge = Edge.create!(attributes)
     end
+    
+    edge
   end
 end
