@@ -1,10 +1,10 @@
 class Page
   
-  def initialize(current_url, current_vertex, html, base_href, &url_generator)
+  def initialize(current_url, current_vertex_url, html, base_href, &url_generator)
     @document = Hpricot(html)
 
-    change_links(current_url, current_vertex, base_href, &url_generator)
-    change_forms(current_vertex, &url_generator)
+    change_links(current_url, current_vertex_url, base_href, &url_generator)
+    change_forms(current_vertex_url, &url_generator)
     add_base_href(base_href)
   end
   
@@ -18,7 +18,7 @@ class Page
 
 private
 
-  def change_links(current_url, current_vertex, base_href, &url_generator)
+  def change_links(current_url, current_vertex_url, base_href, &url_generator)
     @document.search('//a[@href]') do |link|
       link_href = link.attributes['href']
 
@@ -29,7 +29,7 @@ private
         begin
           link_href = "#{base_href}#{link_href}" if URI.parse(link_href.to_s).relative?
       
-          node_path = NodeConnection.new(current_vertex, link_href, link.inner_text.strip)
+          node_path = NodeConnection.new(current_vertex_url, link_href, link.inner_text.strip)
           link.set_attribute( :href, node_path.to_url(&url_generator) )
         rescue URI::InvalidURIError
         end
@@ -37,12 +37,12 @@ private
     end
   end
 
-  def change_forms(current_vertex, &url_generator)
+  def change_forms(current_vertex_url, &url_generator)
     @document.search( '//form' ) do |form|
       form_action = form.attributes['action']
       inputs = form.search( '//input' )
       inputs.first.before( "<input type=hidden name='t' value='#{form_action}' />" )
-      inputs.first.before( "<input type=hidden name='v' value='#{URI.escape(current_vertex.url)}' />" )
+      inputs.first.before( "<input type=hidden name='v' value='#{URI.escape(current_vertex_url)}' />" )
       inputs.first.before( "<input type=hidden name='n' value='<button>' />" )
 
       form.set_attribute( :action, url_generator.call )

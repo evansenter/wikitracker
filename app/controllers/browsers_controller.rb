@@ -24,7 +24,7 @@ class BrowsersController < ApplicationController
     @fields.delete "action"
     puts "@fields=#{@fields.inspect}"
     
-    @browser = Browser.new(browser_url( @fields ), @fields)
+    @browser = Browser.new(browser_url( @fields ), NodeConnection.new_from_params( @fields ))
     puts "-- On creation -- "
     p @browser
 
@@ -35,7 +35,7 @@ class BrowsersController < ApplicationController
     p @browser
     
     Graph.record_node(
-      @browser.request.origin_vertex, 
+      @browser.origin_vertex, 
       @browser.request.link_name, 
       @browser.next_vertex)
   end
